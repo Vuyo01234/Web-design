@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Grid</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #000; /* dark blue-gray background */
+        color: #f3efe6; /* off-white text */
+        line-height: 1.4;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      /* Container and layout */
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1.5rem 1rem;
+      }
+      header {
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        max-width: 110vw;
+        margin: 0 auto;
+        padding: 1rem 0 0 25rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .logo {
+        font-family: "Brush Script MT", cursive;
+        font-size: 5rem;
+        font-weight: bold;
+        img {
+          padding: 1rem;
+          height: 15vh;
+        }
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding-left: 30vw;
+        gap: 2rem;
+      }
+      nav ul li {
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+      nav ul li a:hover,
+      nav ul li.active a {
+        font-weight: 700;
+      }
+      main {
+        padding: 20vh 10rem 10rem 10rem;
+        display: grid;
+        gap: 2rem;
+      }
+
+      /* --- GRID --- */
+      #sites {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 20px; /* spacing between items */
+        margin: 20px;
+        padding: 0;
+      }
+
+      #sites li {
+        list-style: none;
+        height: 30vh;
+        border: 0.5rem solid #000;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+      #sites li :hover {
+        zoom: 112%;
+      }
+      #sites li a {
+        opacity: 40%;
+        text-decoration: none;
+        color: #000;
+        background: #f1f1f1;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+      }
+      a img {
+        height: 25px;
+      }
+      /* --- IMAGES FOR EACH SLOT --- */
+      #sites li:nth-child(1) {
+        background-image: url(images/stock-images/pic1.png);
+      }
+      #sites li:nth-child(2) {
+        background-image: url(images/stock-images/pic2.png);
+      }
+      #sites li:nth-child(3) {
+        background-image: url(images/stock-images/pic3.png);
+      }
+      #sites li:nth-child(4) {
+        background-image: url(images/stock-images/pic4.png);
+      }
+      #sites li:nth-child(5) {
+        background-image: url(images/stock-images/pic5.png);
+      }
+      #sites li:nth-child(6) {
+        background-image: url(images/stock-images/pic6.png);
+      }
+      #sites li:nth-child(7) {
+        background-image: url(images/stock-images/pic7.png);
+      }
+      #sites li:nth-child(8) {
+        background-image: url(images/stock-images/pic8.png);
+      }
+      #sites li:nth-child(9) {
+        background-image: url(images/stock-images/pic9.png);
+      }
+      #button {
+        padding-left: 80vw;
+      }
+      #moreButton {
+        padding: 10px 20px;
+        background-color: #f9f9f9;
+        color: #000;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      footer {
+        display: block;
+        #copyright {
+          color: #fff;
+          position: relative;
+          display: flex;
+          height: 10vh;
+          div {
+            margin-top: auto;
+            margin-left: calc(50%);
+          }
+        }
+      }
+
+      #icons {
+        margin-top: 1rem;
+        margin-left: calc(50%);
+        padding: 0 0 0 1rem;
+        img {
+          margin: 1rem;
+          height: 3vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo" aria-label="Company Logo">
+        <img src="images/icons/full-logo.png" alt="" />
+      </div>
+      <nav aria-label="Primary Navigation">
+        <ul>
+          <li class="active"><a href="home.html">Home</a></li>
+          <li><a href="#">Services +</a></li>
+          <li><a href="index.html">Web-designs</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <ul id="sites">
+        <li>
+          <a
+            href="https://www.wix.com/website-template/view/html/3146?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fportfolios&tpClick=view_button&esi=f9da6853-7882-426b-b0b3-60f813e4b1da"
+            target="_blank"
+            ><img src="images/icons/preview.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.wix.com/website-template/view/html/1917?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fportfolios&tpClick=view_button&esi=4475c2d9-c83b-4a12-aec9-973c1c40aacf"
+            target="_blank"
+            ><img src="images/icons/preview.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.wix.com/website-template/view/html/3149?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fportfolios&tpClick=view_button&esi=8c9e9ef5-7ff2-4a84-bf92-bb22f6311547"
+            target="_blank"
+            ><img src="images/icons/preview.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.wix.com/website-template/view/html/1911?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fportfolios&tpClick=view_button&esi=809b5cff-0cc9-4d2c-8ef8-28a5f7adcad3"
+            target="_blank"
+            ><img src="images/icons/preview.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.wix.com/website-template/view/html/2844?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fportfolios%2F2&tpClick=view_button&esi=7a57295c-a18b-40fa-8066-dbbdb45ea272"
+            target="_blank"
+            ><img src="images/icons/preview.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.wix.com/website-template/view/html/1902?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fportfolios%2F2&tpClick=view_button&esi=0aa1a7d2-7440-49f1-b710-dc2a1afa26ee"
+            target="_blank"
+            ><img src="images/icons/preview.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.wix.com/website-template/view/html/2312?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fportfolios%2F2&tpClick=view_button&esi=237b7086-11ee-41a1-8dc8-f3832f804708"
+            target="_blank"
+            ><img src="images/icons/preview.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.wix.com/website-template/view/html/1850?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fportfolios%2F2&tpClick=view_button&esi=38f67d7d-d982-4ade-8087-d8256f97113c"
+            target="_blank"
+            ><img src="images/icons/preview.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.wix.com/website-template/view/html/1788?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fportfolios%2F2&tpClick=view_button&esi=2cece702-af41-4888-a7dd-7dc82f0626dc"
+            target="_blank"
+            ><img src="images/icons/preview.png" alt=""
+          /></a>
+        </li>
+      </ul>
+      <div id="button">
+        <button id="moreButton">
+          <a href="more.html">More</a>
+        </button>
+      </div>
+      <footer>
+        <div id="copyright">
+          <div>&copy; 2025, Craft Cooperative Studi0</div>
+        </div>
+        <div id="icons">
+          <a href="https://www.instagram.com/vuyo_kumalo" target="_blank"
+            ><img src="images/icons/instagram (1).png" alt="" /></a
+          ><a href="https://www.facebook.com/vura.kau" target="_blank"
+            ><img src="images/icons/facebook.png" alt="" /></a
+          ><a href="https://github.com/Vuyo01234" target="_blank"
+            ><img src="images/icons/github.png" alt=""
+          /></a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

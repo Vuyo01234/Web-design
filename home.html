@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Company Homepage</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #374151; /* dark blue-gray background */
+        color: #fff; /* off-white text */
+        line-height: 1.4;
+
+        #background-video {
+          position: fixed;
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          min-height: 100%;
+          z-index: -1;
+          object-fit: cover;
+        }
+      }
+      #body {
+        padding: 0 0 0 10rem;
+        h1 {
+          font-size: xx-large;
+        }
+      }
+      #body p {
+        padding-left: 5rem;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      /* Container and layout */
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1.5rem 1rem;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+      }
+      .logo {
+        font-family: "Brush Script MT", cursive;
+        font-size: 5rem;
+        font-weight: bold;
+        img {
+          padding: 1rem;
+          height: 15vh;
+        }
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 2rem;
+      }
+      nav ul li {
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+      nav ul li a:hover,
+      nav ul li.active a {
+        font-weight: 700;
+      }
+      footer {
+        display: block;
+        #copyright {
+          color: #fff;
+          position: relative;
+          display: flex;
+          height: 50vh;
+          div {
+            margin-top: auto;
+            margin-left: calc(50%);
+          }
+        }
+      }
+      #icons {
+        margin-top: 1rem;
+        margin-left: calc(50%);
+        padding: 0 0 0 1rem;
+        img {
+          margin: 1rem;
+          height: 3vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source
+        src="bg/Screen Recording 2025-07-31 100914 (online-video-cutter.com).mp4"
+      />
+    </video>
+    <div class="container">
+      <!-- Header with logo and navigation -->
+      <header>
+        <div class="logo" aria-label="Company Logo">
+          <img src="images/icons/full-logo.png" alt="" />
+        </div>
+        <nav aria-label="Primary Navigation">
+          <ul>
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="#">Services +</a></li>
+            <li><a href="index.html">Web-designs</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="body">
+        <h1>Welcome to Craft Cooperative studio</h1>
+        <p>INTERFACE DEVELOPMENT | UI/UX DESIGN | BRANDING</p>
+      </section>
+      <footer>
+        <div id="copyright">
+          <div>&copy; 2025, Craft Cooperative Studi0</div>
+        </div>
+        <div id="icons">
+          <a href="https://www.instagram.com/vuyo_kumalo" target="_blank"
+            ><img src="images/icons/instagram (1).png" alt="" /></a
+          ><a href="https://www.facebook.com/vura.kau" target="_blank"
+            ><img src="images/icons/facebook.png" alt="" /></a
+          ><a href="https://github.com/Vuyo01234" target="_blank"
+            ><img src="images/icons/github.png" alt=""
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
